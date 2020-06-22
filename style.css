@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('https://papers.co/wallpaper/papers.co-sj27-dark-blue-night-gradation-blur-35-3840x2160-4k-wallpaper.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+     
+    
+}
+
+.btn-width{
+    width: 80px;
+    margin: 15px;
+}
+
+
+
+.btn-final{
+    width: 310px;
+}
+
+
+
+@media screen and (max-width: 454px) {
+    .btn-width {
+          margin:0px;
+          margin-top: 5px;
+          margin-left: 5px;
+    }
+    .btn-final{
+        width: 260px;
+        
+          margin-top: 5px;
+          margin-left: 5px;
+    }
+  }
