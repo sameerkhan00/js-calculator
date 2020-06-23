@@ -10,7 +10,7 @@
     
 </head>
 <body>
-        <div class="container text-center border border-white">
+      <div class="container text-center border border-white">
                     <div class="row d-flex justify-content-center mt-5">
                 <div class="col-sm-12">
             <h1 class="display-4 text-white"> Calculator </h1>
@@ -22,49 +22,49 @@
                         <div class="input-group-prepend ">
                           
                         </div>
-                        <input type="text" class="form-control text-white" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                        <input type="text" class="form-control text-white" id="result" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
                       </div>
                        </div>
                 </div>
 
                 <div class=" row d-flex justify-content-center mt-2">
                 <div>
-                    <button type="button" class="btn btn-primary btn-width">C</button>
-                    <button type="button" class="btn btn-primary btn-width">CE</button>
+                    <button type="button" class="btn btn-primary btn-width" onclick="clearResult()">C</button>
+                    <button type="button" class="btn btn-primary btn-width" onclick="">CE</button>
                     <button type="button" class="btn btn-primary btn-width">%</button>
-                    <button type="button" class="btn btn-primary btn-width">+</button>
+                    <button type="button" class="btn btn-primary btn-width" onclick="getNum('+')">+</button>
                 </div>
                 </div>
 
                 <div class=" row d-flex justify-content-center">
                     <div>
-                        <button type="button" class="btn btn-primary  btn-width">7</button>
-                        <button type="button" class="btn btn-primary  btn-width">8</button>
-                        <button type="button" class="btn btn-primary  btn-width">9</button>
-                        <button type="button" class="btn btn-primary  btn-width">X</button>
+                        <button type="button" class="btn btn-primary  btn-width" onclick="getNum('7')">7</button>
+                        <button type="button" class="btn btn-primary  btn-width" onclick="getNum('8')">8</button>
+                        <button type="button" class="btn btn-primary  btn-width" onclick="getNum('9')">9</button>
+                        <button type="button" class="btn btn-primary  btn-width" onclick="getNum('*')">X</button>
                     </div>
                     </div>
 
                     <div class=" row d-flex justify-content-center">
                         <div>
-                            <button type="button" class="btn btn-primary btn-width">4</button>
-                            <button type="button" class="btn btn-primary btn-width">5</button>
-                            <button type="button" class="btn btn-primary btn-width">6</button>
-                            <button type="button" class="btn btn-primary btn-width">-</button>
+                            <button type="button" class="btn btn-primary btn-width" onclick="getNum('4')">4</button>
+                            <button type="button" class="btn btn-primary btn-width" onclick="getNum('5')">5</button>
+                            <button type="button" class="btn btn-primary btn-width" onclick="getNum('6')">6</button>
+                            <button type="button" class="btn btn-primary btn-width" onclick="getNum('-')">-</button>
                         </div>
                         </div>
                         <div class=" row d-flex justify-content-center">
                             <div>
-                                <button type="button" class="btn btn-primary btn-width ">1</button>
-                                <button type="button" class="btn btn-primary btn-width">2</button>
-                                <button type="button" class="btn btn-primary btn-width">3</button>
-                                <button type="button" class="btn btn-primary btn-width " >+</button>
+                                <button type="button" class="btn btn-primary btn-width " onclick="getNum('1')">1</button>
+                                <button type="button" class="btn btn-primary btn-width" onclick="getNum('2')">2</button>
+                                <button type="button" class="btn btn-primary btn-width" onclick="getNum('3')">3</button>
+                                <button type="button" class="btn btn-primary btn-width " onclick="getNum('/')" >/</button>
                             </div>
                             </div>
                             <div class=" row d-flex justify-content-center mb-5">
                                <div>
-                                <button type="button" class="btn btn-primary btn-width btn-final">0</button>
-                                <button type="button" class="btn btn-primary btn-width " >=</button>
+                                <button type="button" class="btn btn-primary btn-width btn-final" onclick="getNum('0')">0</button>
+                                <button type="button" class="btn btn-primary btn-width " onclick="resultbtn()">=</button>
                             </div>
                                 </div>
 
@@ -90,10 +90,8 @@
 
 
 
-
-
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 </body>
+<script src="app.js"></script>
 </html>
