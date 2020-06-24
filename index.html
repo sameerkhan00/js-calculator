@@ -13,7 +13,7 @@
       <div class="container text-center border border-white">
                     <div class="row d-flex justify-content-center mt-5">
                 <div class="col-sm-12">
-            <h1 class="display-4 text-white"> Calculator </h1>
+            <h1 class="display-4 text-white mb-3"> Calculator </h1>
         </div>
     </div>
            <div class="row d-flex justify-content-center">
@@ -26,15 +26,27 @@
                       </div>
                        </div>
                 </div>
+                <div class=" row d-flex justify-content-center mt-3">
+                    <div>
+                        <button type="button" class="btn btn-primary btn-width " onclick="sinFunc()">sin</button>
+                        <button type="button" class="btn btn-primary btn-width " onclick="cosFunc()">cos</button>
+                        <button type="button" class="btn btn-primary btn-width " onclick="tanFunc()">tan</button>
+                        <button type="button" class="btn btn-primary btn-width " onclick="clearResult()" >C</button>
+                       
+                    </div>
+                    </div>
 
-                <div class=" row d-flex justify-content-center mt-2">
-                <div>
-                    <button type="button" class="btn btn-primary btn-width" onclick="clearResult()">C</button>
-                    <button type="button" class="btn btn-primary btn-width" onclick="">CE</button>
-                    <button type="button" class="btn btn-primary btn-width">%</button>
-                    <button type="button" class="btn btn-primary btn-width" onclick="getNum('+')">+</button>
-                </div>
-                </div>
+                <div class=" row d-flex justify-content-center ">
+                    <div>
+                        
+                        <button type="button" class="btn btn-primary btn-width" onclick="squareFunc()">sqrt</button>
+                        <button type="button" class="btn btn-primary btn-width" onclick="">CE</button>
+                        <button type="button" class="btn btn-primary btn-width">%</button>
+                        <button type="button" class="btn btn-primary btn-width" onclick="getNum('+')">+</button>
+                    </div>
+                    </div>
+
+               
 
                 <div class=" row d-flex justify-content-center">
                     <div>
@@ -61,10 +73,15 @@
                                 <button type="button" class="btn btn-primary btn-width " onclick="getNum('/')" >/</button>
                             </div>
                             </div>
+
+                            
                             <div class=" row d-flex justify-content-center mb-5">
                                <div>
-                                <button type="button" class="btn btn-primary btn-width btn-final" onclick="getNum('0')">0</button>
+                                <button type="button" class="btn btn-primary btn-width" onclick="getNum('0')">0</button>
+                                <button type="button" class="btn btn-primary btn-width" onclick="getNum('00')">00</button>
+                                <button type="button" class="btn btn-primary btn-width " onclick="getNum('.')" >.</button>
                                 <button type="button" class="btn btn-primary btn-width " onclick="resultbtn()">=</button>
+                                
                             </div>
                                 </div>
 
