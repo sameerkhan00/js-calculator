@@ -26,3 +26,8 @@ function squareFunc(){
     var result=document.getElementById("result");
     result.value=Math.sqrt(result.value);
 }
+
+function back(){
+    var result=document.getElementById("result");
+result.value=result.value.slice(0,-1);
+}
